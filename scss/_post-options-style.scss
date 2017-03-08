@@ -1,0 +1,69 @@
+/* ===== POST OPTIONS ===== */
+
+.post-options {
+	.post {
+	}
+	.social {
+		padding-top: 3rem;
+	}
+}
+.sidebar-options {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 0;
+	margin-top: 35px;
+	.side-teaser {
+		width: 50%;
+		background-color: $color-orange-basic;
+		div:first-of-type {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			// background-color: $color-orange-basic;
+		}
+		img {
+			width: 100%;
+		}
+		p {
+			width: 100%;
+			padding: 5%;
+		}
+	}
+	// order of elements inside teaser
+	// clear
+	.side-teaser:nth-of-type(n) {
+		img {
+			float: none;
+		}
+		p {
+			float: none;
+			left: 0;
+			text-align: left;
+		}
+	}
+	//**  checkerboard
+	.side-teaser:nth-of-type(4n+1), .side-teaser:nth-of-type(4n+4) {
+			background-color: $bg-box-light;
+		a {
+			color: $color-post-dark;
+		}
+	}
+	.side-teaser:nth-of-type(even) {
+		p {
+			text-align: right;
+		}
+	}
+}
+.sidebar-static {
+	.sidebar-bottom:nth-of-type(2) {
+		.side-teaser {
+			width: 50%;
+			div {
+				border: 3px solid transparent;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/* ==== HEADER/ NAVBAR SECTION OPTIONS=====*/
+
+// Boostrap default NavBar - custom settings
+
+@include media-breakpoint-up-md {
+	.navbar-blog {
+		// main nav links
+		.nav-item {
+			.nav-link {
+				width: 84px;
+			}
+			// nav-link active for options
+			.active-options {
+				font-size: 1.02rem;
+				color: $color-orange-basic;
+				text-transform: uppercase;
+				padding-top: 1px;
+			}
+			.active-options:hover {
+				font-size: 1.02rem;
+				text-transform: uppercase;
+				color: $color-orange-basic;
+				padding-top: 1px;
+			}
+			.active-options:focus {
+				font-size: 1.02rem;
+				text-transform: uppercase;
+				color: $color-orange-basic;
+				padding-top: 1px;
+			}
+		}
+		.nav-item:first-of-type .nav-link {
+			width: 85px;
+		}
+	}
+}

@@ -1,0 +1,195 @@
+/* ===== POST ===== */
+
+.post-basic {
+	background-color: #fff;
+	padding: 55px 0 65px 0;
+	position: relative;
+	.post {
+		h1, p {
+			color: $color-post-dark;
+		}
+		h1 {
+			text-align: right;
+			font-size: 2rem;
+		}
+		.ed-lead {
+		  display: inline-block;
+		  font-size: 1.1rem;
+		  line-height: 1.5;
+		  color: $color-post-dark;
+		  text-align: justify;
+		  margin-top: 1.4rem;
+		  font-weight: bold;
+		}
+		.ed-h3, .ed-h4 {
+		  font-weight: bold;
+		  font-size: 1.1rem;
+		}
+		.ed-h3 {
+		  color: $color-post-dark;
+		}
+		.ed-h4 {
+		  color: $color-orange-basic;
+		}
+		.ed-h3-jobs {
+		  font-size: 1.6rem;
+		  font-weight: 300;
+		  color: $color-orange-basic;
+		  padding-top: 20px;
+		}
+		.ed-lead, .ed-h3, .ed-h4, p, ul {
+			margin-bottom: 1.4rem;
+		}
+		p {
+			font-size: 1rem;
+			text-align: justify;
+			display: inline-block;
+		}
+		.ed-text-org {
+		  color: $color-orange-basic;
+		}
+		.ed-text-light {
+		  font-weight: 300;
+		}
+		.ed-text-lightxl {
+		  font-weight: 300;
+		  font-size: 130%;
+		}
+		.ed-post-email {
+		  a {
+		    color: $color-orange-basic;
+		    font-weight: bold;
+		    padding: 0 2px;
+		  }
+		  a:hover {
+		    color: #000;
+		    text-decoration: none;
+		    background-color: $color-orange-basic;
+		  }
+		}
+		.ed-post-link {
+		  a {
+		    color: $color-post-dark;
+		    font-weight: bold;
+		    padding: 0 2px;
+		  }
+		  a:hover {
+		    color: #000;
+		    text-decoration: none;
+		    background-color: $color-orange-basic;
+		  }
+		}
+		ul {
+			list-style: disc outside none;
+			padding-left: 15px;
+			li {
+			font-size: 1rem;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+			margin: 0;
+		}
+		.author {
+			float: right;
+			border-top: 1px solid $color-post-light;
+			margin-top: 5px;
+			p {
+				font-size: 1rem;
+				padding-top: 3px;
+				font-weight: 300;
+				color: $color-post-light;
+				margin-bottom: 0;
+			}
+		}
+		// social buttons
+		.social {
+			padding-bottom: 4.1rem;
+		}
+		.fb-like, .twitter-share-button, .IN-widget {
+			float: right;
+			margin-left: 10px;
+			display: block;
+			margin-bottom: 5px;
+		}
+		.twitter-share-button, .IN-widget {
+			margin-top: 4px;
+		}
+		// author description without photo on mobile
+		.author-descript {
+			display: inline-block;
+			background-color: #fff;
+			border-top: 1px solid $color-orange-basic;
+			border-bottom: 1px solid $color-orange-basic;
+			padding: 5px 0;
+			div {
+				display: block;
+			}
+			p {
+				margin-bottom: 0;
+			}
+			p:first-of-type {
+				font-size: 1rem;
+			}
+			p:last-of-type {
+				margin: 0;
+				padding: 0;
+				font-weight: 300;
+				font-style: italic;
+				font-size: .98rem;
+				line-height: 1.3;
+			}
+		}
+	}
+}
+
+.sidebar {
+	padding-right: 0;
+	padding-left: 0;
+	margin-bottom: 15px;
+	.side-teaser {
+		background-color: $color-orange-basic;
+		width: 100%;
+		position: relative;
+		float: left;
+		overflow: hidden;
+		img, p {
+			width: 50%;
+			height: auto;
+		}
+		p {
+			position: absolute;
+			bottom: 0;
+			color: #fff;
+			padding: 2% 3%;
+			margin-bottom: 0;
+		}
+		a:focus {
+			text-decoration: none;
+			color: #fff;
+			outline-offset: 0;
+		}
+	}
+	//order of elements inside teaser
+	.side-teaser:nth-of-type(n){
+		img {
+			float: left;
+		}
+		p {
+			float: right;
+			left: 50%;
+			text-align: left;
+		}
+	}
+	.side-teaser:nth-of-type(2n) {
+		img {
+			float: right;
+		}
+		p {
+			float: left;
+			left: 0;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+/* ===== POSTTYPE INDEX ===== */
+
+.posttype {
+	background-color: #fff;
+	padding: 55px 0 0 0;
+	position: relative;
+	div[class*="col-"] {
+		padding: 0;
+		background-color: $color-orange-basic;
+		position: relative;
+	}
+	.post {
+		position: relative;
+		img, p {
+			width: 50%;
+			height: auto;
+		}
+		p {
+			max-height: 100%;
+			position: absolute;
+			bottom: 0;
+			padding: 2% 3%;
+			margin-bottom: 0;
+		}
+		a:focus {
+			text-decoration: none;
+			color: black;
+			outline-offset: 0;
+		}
+		a:active {
+			text-decoration: none;
+			color: black;
+			outline-offset: 0;
+		}
+	}
+	//order of post elements
+	.post:nth-of-type(n) {
+		img {
+			float: left;
+		}
+		p {
+			float: right;
+			left: 50%;
+		}
+	}
+	.post:nth-of-type(2n) {
+		img {
+			float: right;
+		}
+		p {
+			float: left;
+			left: 0;
+			text-align: right;
+		}
+	}
+	//Wordpress numbered pagination
+	.pagination {
+		width: 100%;
+		text-align: left;
+		padding: 5px 0 5px 15px;
+		h2 {
+			display: none;
+		}
+		.page-numbers.current {
+			color: #666666;
+			font-weight: 300;
+		}
+		a.page-numbers {
+			color: $color-orange-basic;
+			padding: 0 6px;
+			font-weight: 300;
+		}
+		a.page-numbers:hover {
+			color: #666666;
+		}
+		.page-numbers.dots {
+			color: $color-orange-basic;
+		}
+	}
+}

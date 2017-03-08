@@ -1,0 +1,57 @@
+/* ==== POSTTYPE INDEX FOR OPTIONS =====*/
+
+@include media-breakpoint-up-sm {
+	.posttype-options {
+		p {
+			font-size: 1.5rem;
+
+		}
+		.mailbox {
+			img {
+				width: 50%;
+			}
+		}
+	}
+}
+@include media-breakpoint-up-md {
+	.posttype-options {
+		margin-top: 60px;
+		padding: 0 0 40px 0;
+		.index-poster {
+			margin-bottom: 65px;
+		}
+		p {
+			font-size: 1.8rem;
+			margin-bottom: 36px;
+
+		}
+		.index-poster.claim {
+			margin-bottom: 20px;
+		}
+		.mailbox {
+			margin-top: 15px;
+			img {
+				width: 60%;
+			}
+		}
+	}
+}
+@include media-breakpoint-up-lg {
+	.posttype-options {
+		.index-poster {
+			margin-bottom: 70px;
+		}
+		p {
+			font-size: 2.25rem;
+		}
+		.index-poster.claim {
+			 margin-top: 30px;
+		}
+		.mailbox {
+			margin-top: 30px;
+			img {
+				width: 70%;
+			}
+		}
+	}
+}
