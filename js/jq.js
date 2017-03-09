@@ -15,8 +15,7 @@ $(document).ready(function(){
 	var $mainCollapsingNavbar =	$('#mainCollapsingNavbar');
 	var $mainCollapsingNavbarHeight = $mainCollapsingNavbar.height();
 
-	var $menu =	$('#menu.navbar-nav > li').click(function(event) {
-
+	function $menu() {
 		// only if breakpoint up to 991px and if this $target has attribute data-menuanchor
 		if ((document.documentElement.clientWidth <= 991) && $(this).data('menuanchor') ) {
 			// use data-anachor instead of href for Bootstrap menu
@@ -43,8 +42,9 @@ $(document).ready(function(){
 			    }, 700);
 			};
 		};
-	})
-	$(window).ready($menu);
+	};
+  $(document).ready($menu);
+  $(window).resize($menu);
 
 
 	/* #mainCollapsingNavbar (Bootstrap)
@@ -62,22 +62,15 @@ $(document).ready(function(){
 	*/
 	var $navbar = $(".navbar");
 
-	var navMobileScroll = $(function() {
+	function $navMobileScroll() {
 		if (document.documentElement.clientWidth <= 767) {
 			$navbar.removeClass("navbar-fixed-top");
 		} else {
 			$navbar.addClass("navbar-fixed-top");
 		};
-	});
-	$(window).ready(navMobileScroll);
-
-	$(window).resize(function() {
-		if (document.documentElement.clientWidth <= 767) {
-			$navbar.removeClass("navbar-fixed-top");
-		} else {
-			$navbar.addClass("navbar-fixed-top");
-		};
-	});
+	};
+	$(document).ready($navMobileScroll);
+  	$(window).resize($navMobileScroll);
 
 	/* ===== CONTACT SECTION ===== */
 
@@ -100,7 +93,7 @@ $(document).ready(function(){
     - change position depending on relatrion body height to window height
   */
   var $body = $('body');
-  var $footer = $('.blog-footer');
+  var $footer = $('footer');
 
   function $fixBlogFooter() {
     if ($body.height() > $(window).height()) {

@@ -865,7 +865,8 @@ footer.blog-footer {
       width: auto;
       max-width: 100%;
       display: inline-block !important;
-      width: 78%; }
+      width: 78%;
+      height: auto !important; }
     .navbar-main .navbar-nav {
       position: relative;
       padding-top: 19px;

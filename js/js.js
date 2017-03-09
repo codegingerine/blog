@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
   toggleOpenClose();
-  window.addEventListener('resize', toggleOpenClose, false);
+  // window.addEventListener('resize', toggleOpenClose, false);
 
   /* Hide close-button when nav-links are clicked on mobile/tablet menu
   - in jQuery function fired to Hide mainCollapsingNavbar after clicking nav-links on mobile/tablet menu
@@ -38,6 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   };
   toggleClose();
-  window.addEventListener('resize', toggleClose, false);
+  // window.addEventListener('resize', toggleClose, false);
 
 });
